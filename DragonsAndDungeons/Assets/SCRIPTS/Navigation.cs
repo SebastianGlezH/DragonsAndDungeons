@@ -14,6 +14,10 @@ public class NavigationScript : MonoBehaviour
     public float Cerca = 0.0f;
     public bool isMoving = false;     
     Animator animator;
+    private string enemyAnimationName = "DS_onehand_attack_A";
+    public AudioSource sonidoEnemigo;
+    public AudioClip SonidoGolpe;
+
 
 
     void Start()
@@ -35,7 +39,6 @@ public class NavigationScript : MonoBehaviour
         
 
         Cerca = Vector3.Distance(transform.position, player.position);
-        Debug.Log(Cerca);
         animator.SetFloat("Cerca", Cerca);
         
         if (agent.velocity.sqrMagnitude > 0.01f)  
@@ -49,6 +52,27 @@ public class NavigationScript : MonoBehaviour
             animator.SetBool("isMoving", isMoving);
         }   
 
+        ///////////////////////////////////////7
+
+         // Obtener el estado actual de la animación en la capa base (índice 0)
+        AnimatorStateInfo animStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+        // Comprobar si el enemigo está reproduciendo la animación que queremos detectar
+        if (animStateInfo.IsName(enemyAnimationName))
+        {
+            // Lógica que quieres ejecutar cuando el enemigo esté en la animación específica
+            AccionDuranteAnimacion();
+        }
+
+    }
+
+    void AccionDuranteAnimacion()
+    {
+        if (!sonidoEnemigo.isPlaying) // Evitar que se reproduzca varias veces seguidas
+            {
+                sonidoEnemigo.PlayOneShot(SonidoGolpe);
+            }
+        
     }
 
     private void LookAtPlayer()
