@@ -23,7 +23,7 @@ public class BarraVida : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("RestarVida"))
+        if (other.CompareTag("QuitarVida"))
         {
             porcentajeVida -= 20f;
         }

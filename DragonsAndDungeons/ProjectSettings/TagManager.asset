@@ -7,6 +7,11 @@ TagManager:
   - CinemachineTarget
   - zona1
   - Spider
+  - Portal
+  - bajarVida
+  - sumarVida
+  - Moneda
+  - QuitarVida
   layers:
   - Default
   - TransparentFX
