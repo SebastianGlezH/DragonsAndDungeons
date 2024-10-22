@@ -12,6 +12,7 @@ TagManager:
   - sumarVida
   - Moneda
   - QuitarVida
+  - damage
   layers:
   - Default
   - TransparentFX
