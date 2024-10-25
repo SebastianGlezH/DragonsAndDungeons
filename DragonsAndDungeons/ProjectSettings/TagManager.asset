@@ -4,15 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - CinemachineTarget
-  - zona1
-  - Spider
-  - Portal
-  - bajarVida
-  - sumarVida
-  - Moneda
   - QuitarVida
-  - damage
+  - zona1
+  - CinemachineTarget
+  - Spider
   layers:
   - Default
   - TransparentFX
@@ -20,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Post Processing
+  - Postprocesing
   - 
   - 
   - 

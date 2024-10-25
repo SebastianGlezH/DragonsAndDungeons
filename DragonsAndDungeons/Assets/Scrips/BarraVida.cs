@@ -70,4 +70,6 @@ public class BarraVida : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         // SceneManager.LoadScene("GameOverScene");
     }
+
+    
 }
