@@ -15214,7 +15214,7 @@ MonoBehaviour:
   Cerca: 0
   isMoving: 0
   sonidoEnemigo: {fileID: 771075433}
-  SonidoGolpe: {fileID: 8300000, guid: 12949d6edf75b164aa785469bd557919, type: 3}
+  SonidoGolpe: {fileID: 8300000, guid: 31b4bdbac8a8d854c9ea677f838431ca, type: 3}
 --- !u!195 &771075432
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15247,8 +15247,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 31b4bdbac8a8d854c9ea677f838431ca, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

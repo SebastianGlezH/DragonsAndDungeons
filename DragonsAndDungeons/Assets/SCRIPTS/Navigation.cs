@@ -70,7 +70,7 @@ public class NavigationScript : MonoBehaviour
     {
         if (!sonidoEnemigo.isPlaying) // Evitar que se reproduzca varias veces seguidas
             {
-                sonidoEnemigo.PlayOneShot(SonidoGolpe);
+                // sonidoEnemigo.PlayOneShot(SonidoGolpe);
             }
         
     }
