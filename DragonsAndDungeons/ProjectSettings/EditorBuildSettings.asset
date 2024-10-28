@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/ESCENAS/Menu.unity
     guid: 22d7f70a2665d08479a6f4d74f34fe7c
-  - enabled: 1
+  - enabled: 0
     path: Assets/ESCENAS/Modular Dungeon.unity
     guid: 27915ac565aadf048b89a94d619c501d
+  - enabled: 1
+    path: Assets/ESCENAS/InGame.unity
+    guid: f22847ea11c49e34aba85545801d025e
   m_configObjects: {}

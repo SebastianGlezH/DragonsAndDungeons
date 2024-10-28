@@ -8,6 +8,10 @@ TagManager:
   - zona1
   - CinemachineTarget
   - Spider
+  - Portal
+  - sumarVida
+  - bajarVida
+  - Moneda
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Postprocesing
-  - 
+  - POSTProcesing
   - 
   - 
   - 
