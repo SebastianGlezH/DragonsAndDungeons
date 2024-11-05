@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 60dd2d6faaeb8b34083a98fac9a36020
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: CaballeroSinNombre(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.008735506, y: 1.4414421, z: -0.014205545}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.25568283, y: 0.2556828, z: 0.25568283}
+    - name: Cube.002
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.0077173375, y: 0.80661947, z: 0.022967279}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.22276159, y: 0.22276165, z: 0.22276159}
+    - name: Cube.003
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.5285011, y: 1.0815115, z: 0.0070620775}
+      rotation: {x: -0.035972998, y: 0.7163768, z: 0.034976754, w: 0.69590724}
+      scale: {x: 0.08891049, y: 0.011696488, z: 0.21312965}
+    - name: Torus.002
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.54167646, y: 1.0736347, z: 0.011501014}
+      rotation: {x: -0.5046634, y: -0.49528822, z: 0.50489163, w: -0.49506447}
+      scale: {x: 0.17951946, y: 0.17535695, z: 0.14249559}
+    - name: Cube.004
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.0076516233, y: 0.3891359, z: -0.0016689003}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.019033404, y: 0.13737372, z: 0.0668416}
+    - name: Cube.005
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.54392123, y: 1.0815115, z: 0.0065769255}
+      rotation: {x: 0.69623125, y: -0.0349607, z: 0.71606183, w: 0.03598901}
+      scale: {x: -0.0889105, y: -0.011696489, z: -0.21312962}
+    - name: Torus.001
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.55710065, y: 1.0736345, z: 0.011003882}
+      rotation: {x: -0.49532062, y: -0.5046317, z: -0.49509683, w: 0.50485986}
+      scale: {x: -0.17951946, y: -0.17535697, z: -0.14249559}
+    - name: Torus.005
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.0077090315, y: 0.5620232, z: 0.0042051673}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.20229785, y: 0.19182901, z: 0.25111327}
+    - name: Cube.006
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.007795731, y: 0.5624578, z: 0.1958597}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.06806647, y: 0.06806647, z: 0.06806647}
+    - name: BezierCircle
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.0055320826, y: 0.8985112, z: 0.0027619004}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.25568283, y: 0.2556828, z: 0.25568283}
+    - name: Cube.007
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.010156172, y: 0.88308424, z: 0.22548681}
+      rotation: {x: -0.37305346, y: 0.66135293, z: 0.23290567, w: 0.60761696}
+      scale: {x: 0.05111627, y: 0.06806647, z: 0.06806646}
+    - name: Cube.008
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.24785696, y: 1.3722891, z: -0.0043904483}
+      rotation: {x: 0.43395954, y: -0.37846377, z: -0.64160126, w: 0.5067467}
+      scale: {x: -0.079950504, y: -0.07995051, z: -0.07995049}
+    - name: Cube.009
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.26326722, y: 1.3722891, z: -0.004621774}
+      rotation: {x: 0.50657547, y: 0.6414048, z: -0.37869298, w: -0.4342497}
+      scale: {x: 0.079950504, y: 0.07995051, z: 0.07995049}
+    - name: Sphere.001
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.007809852, y: 1.3992437, z: 0.227069}
+      rotation: {x: 0.74951017, y: 0.020737236, z: 0.66141486, w: 0.018300021}
+      scale: {x: -0.027299518, y: -0.06627215, z: -0.04544688}
+    - name: Cube.010
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.10237861, y: 1.4458658, z: 0.22751904}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.02585138, y: 0.025851382, z: 0.02585138}
+    - name: Cube.011
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.11799865, y: 1.4458658, z: 0.22741932}
+      rotation: {x: 0.70726657, y: 0.000000030901635, z: 0.70694697, w: -0.000000030915604}
+      scale: {x: -0.02585138, y: -0.025851382, z: -0.02585138}
+    - name: Plane
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.007814529, y: 1.2102361, z: 0.2373569}
+      rotation: {x: 0.500113, y: 0.500113, z: 0.49988696, w: 0.49988696}
+      scale: {x: 0.031870943, y: 0.031870943, z: 0.031870943}
+    - name: Cube.012
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.008379731, y: 1.1766467, z: 0.23654437}
+      rotation: {x: 0.062583245, y: 0.7044924, z: 0.06255495, w: 0.70417386}
+      scale: {x: 0.01418249, y: 0.025522558, z: 0.026023306}
+    - name: Cube.013
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.042678304, y: 1.1802007, z: 0.2327413}
+      rotation: {x: 0.06764773, y: 0.76150256, z: 0.057040088, w: 0.6420935}
+      scale: {x: 0.011524784, y: 0.025383169, z: 0.026023304}
+    - name: Cube.014
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.1234671, y: 1.1968473, z: 0.20774108}
+      rotation: {x: 0.02651619, y: 0.8512877, z: 0.08922828, w: 0.51637626}
+      scale: {x: 0.0115297735, y: 0.027711717, z: 0.033741217}
+    - name: Cube.015
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.17236751, y: 1.214275, z: 0.16141918}
+      rotation: {x: 0.03288804, y: 0.946919, z: 0.10183897, w: 0.30313644}
+      scale: {x: 0.012620725, y: 0.030230826, z: 0.036933832}
+    - name: Cube.016
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.21484955, y: 1.2654889, z: 0.08330029}
+      rotation: {x: 0.019812154, y: 0.97753644, z: 0.10516784, w: 0.18157563}
+      scale: {x: 0.015047767, y: 0.034369938, z: 0.0536789}
+    - name: Cube.017
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.027053475, y: 1.1802007, z: 0.23277287}
+      rotation: {x: 0.6424376, y: -0.05707053, z: 0.7612123, w: -0.06762204}
+      scale: {x: -0.011524782, y: -0.025383169, z: -0.02602331}
+    - name: Cube.018
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.10786487, y: 1.1968473, z: 0.20784569}
+      rotation: {x: 0.51676124, y: -0.089240275, z: 0.8510541, w: -0.026475802}
+      scale: {x: -0.011529768, y: -0.027711717, z: -0.03374121}
+    - name: Cube.019
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.15680708, y: 1.214275, z: 0.16156806}
+      rotation: {x: 0.3035645, y: -0.101853766, z: 0.9467818, w: -0.032842048}
+      scale: {x: -0.012620726, y: -0.030230824, z: -0.036933832}
+    - name: Cube.020
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.19935971, y: 1.2654889, z: 0.08348772}
+      rotation: {x: 0.18201767, y: -0.105176814, z: 0.97745425, w: -0.01976463}
+      scale: {x: -0.015047767, y: -0.034369934, z: -0.0536789}
+    - name: Cube.021
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: -0.13639957, y: 0.12914144, z: -0.023173511}
+      rotation: {x: -8.6595606e-17, y: 0.70726657, z: 8.6595606e-17, w: 0.70694697}
+      scale: {x: 0.09622822, y: 0.036104873, z: 0.09622822}
+    - name: Cube.022
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.15179276, y: 0.12914144, z: -0.023303866}
+      rotation: {x: 0.70726657, y: 0.000000030901635, z: 0.70694697, w: -0.000000030915604}
+      scale: {x: -0.09622822, y: -0.036104873, z: -0.09622822}
+    - name: NurbsPath.008
+      parentName: CaballeroSinNombre(Clone)
+      position: {x: 0.086634375, y: 1.5651208, z: -0.027856693}
+      rotation: {x: 0.30867645, y: 0.6326764, z: -0.3161433, w: 0.6359975}
+      scale: {x: 0.119650446, y: 0.119650446, z: 0.119650446}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
