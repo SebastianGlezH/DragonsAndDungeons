@@ -12,9 +12,13 @@ public class PlayerWalk : MonoBehaviour
     public LayerMask groundLayer; // Asegúrate de que esto está configurado correctamente
     private bool isGrounded, hasJumped;
 
-    public float speed = 5f;
+    public float speed = 4f;
     private Vector3 velocity;  
     public float gravity = -9.81f;  
+
+    float velocidad = 0.0f;
+    public float acceleration = 2f;
+    public float deceleration = 10f;
 
     private CharacterController controller;
 
@@ -33,6 +37,8 @@ public class PlayerWalk : MonoBehaviour
 
         float mouseX = Input.GetAxis("Mouse X");
         transform.Rotate(0, mouseX * rotationSpeed, 0); // Rotar según la entrada del mouse
+
+
     }
 
     private void FixedUpdate()
@@ -49,15 +55,44 @@ public class PlayerWalk : MonoBehaviour
 
     void AnimatePlayer()
     {
-        if (v != 0)
+        bool runPressed = Input.GetKey(KeyCode.LeftShift);
+        if (v != 0 || h != 0)
         {
-            playerAnim.PlayerWalk(true);
+            if(velocidad < 5f)
+        {
+            velocidad += Time.deltaTime * acceleration * 20;
+            playerAnim.PlayerWalk(velocidad);
+            // Debug.Log(runPressed);
+            if (runPressed && velocidad < 5f)
+        {
+            speed = 8f;
+            velocidad += Time.deltaTime * acceleration * 20;
+        }
+        if(!runPressed && velocidad >= 3.0f)
+        {
+            velocidad = 3.0f; // Limitar la velocidad al dejar de presionar Shift
+            speed = 4f;
+            Debug.Log("sis");
+        }
+
+        }
+            
         }
         else
         {
-            playerAnim.PlayerWalk(false);   
+            if(velocidad > 0.0f)
+            {
+            velocidad -= Time.deltaTime * deceleration * 20;
+            playerAnim.PlayerWalk(velocidad); 
+            }
+            if(velocidad < 0.0f)
+        {
+            velocidad = 0.0f;
+            playerAnim.PlayerWalk(velocidad); 
+        } 
         }
-    }
+
+        }
 
     void CheckAttack()
     {
