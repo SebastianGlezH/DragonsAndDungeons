@@ -12,6 +12,7 @@ TagManager:
   - sumarVida
   - bajarVida
   - Moneda
+  - SalirNV
   layers:
   - Default
   - TransparentFX
