@@ -55327,6 +55327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1769881109}
+  targetTag: SalirNV
 --- !u!1001 &1210538186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57296,6 +57297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 972722927}
+  sceneIndex: 0
 --- !u!1 &1251695932
 GameObject:
   m_ObjectHideFlags: 0
