@@ -23,8 +23,8 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
-    animationCompression: 1
+    importConstraints: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -55,8 +55,8 @@ ModelImporter:
     bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
-    maxBonesPerVertex: 4
-    minBoneWeight: 0.001
+    maxBonesPerVertex: 37
+    minBoneWeight: 0.076
     optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
@@ -78,12 +78,342 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - 28e02ca61633e4a4c9db33f24173a353
+  - 82f1319eabde0e44caca2871940182fa
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: villano@Dwarf Walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.198849, z: 0.120576255}
+      rotation: {x: -0.50014144, y: -0.4998586, z: -0.49991515, w: 0.5000849}
+      scale: {x: 99.99999, y: 99.99999, z: 100}
+    - name: Cube.002
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 2.5951972, z: 0.120576255}
+      rotation: {x: -0.50014144, y: -0.4998586, z: -0.49991515, w: 0.5000849}
+      scale: {x: 87.12422, y: 87.12422, z: 87.12422}
+    - name: Cube.003
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497092, y: 5.198849, z: 0.12057623}
+      rotation: {x: 0.5312881, y: 0.46664292, z: 0.51751864, w: -0.48182136}
+      scale: {x: 34.773743, y: 83.35705, z: 4.574608}
+    - name: brazal2
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: 1.879113, y: 3.76032, z: 0.046995018}
+      rotation: {x: 0.0067680907, y: -0.7069145, z: 0.006765027, w: 0.7072343}
+      scale: {x: 70.21179, y: 55.731396, z: 68.583786}
+    - name: Cube.004
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.095285356, y: 1.0875354, z: -0.573831}
+      rotation: {x: -0.50014144, y: -0.4998586, z: -0.49991515, w: 0.5000849}
+      scale: {x: 7.444147, y: 26.142393, z: 53.72817}
+    - name: brazal
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -2.1712315, y: 3.7603197, z: 0.04893949}
+      rotation: {x: -0.7069145, y: 0.0067679817, z: 0.7072343, w: 0.0067649176}
+      scale: {x: -70.21179, y: -55.731396, z: -68.583786}
+    - name: Torus.005
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09499153, y: 1.7593588, z: 0.07552976}
+      rotation: {x: 0.50024015, y: 0.49975988, z: 0.5000139, w: -0.49998596}
+      scale: {x: 79.12063, y: 98.21282, z: 75.02617}
+    - name: BezierCircle
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 7.479027, z: 0.120576255}
+      rotation: {x: -0.50014144, y: -0.4998586, z: -0.49991515, w: 0.5000849}
+      scale: {x: 99.99999, y: 99.99999, z: 100}
+    - name: Cube.007
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.025119066, y: 3.0150597, z: -0.7899239}
+      rotation: {x: 0.63233656, y: 0.16586131, z: 0.6934386, w: -0.30295804}
+      scale: {x: 19.992062, y: 26.621449, z: 26.621447}
+    - name: Cube.008
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497121, y: 5.198849, z: 0.12057626}
+      rotation: {x: 0.7212949, y: -0.6651798, z: -0.051468354, w: 0.1860663}
+      scale: {x: -31.269407, y: -31.269407, z: -31.26941}
+    - name: Cube.009
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497121, y: 5.198849, z: 0.12057626}
+      rotation: {x: -0.18576524, y: -0.0511419, z: 0.6652639, w: 0.72131807}
+      scale: {x: 31.26941, y: 31.269407, z: 31.26941}
+    - name: Sphere.001
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.198849, z: 0.120576255}
+      rotation: {x: 0.4823545, y: 0.5429237, z: -0.5170439, w: 0.45302728}
+      scale: {x: -10.677102, y: -17.774712, z: -25.919668}
+    - name: Cube.010
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.024604, z: 0.120576255}
+      rotation: {x: -0.3790585, y: -0.5969211, z: -0.37878835, w: 0.59709233}
+      scale: {x: 10.110724, y: 10.110725, z: 10.110725}
+    - name: Cube.011
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.0536575, z: 0.120576255}
+      rotation: {x: -0.5746601, y: -0.41202644, z: 0.57484645, w: -0.41176635}
+      scale: {x: -10.110724, y: -10.110725, z: -10.110725}
+    - name: Plane
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.198849, z: 0.120576255}
+      rotation: {x: 0.7071068, y: 0.7071067, z: -0.00015995852, w: -0.00015995854}
+      scale: {x: 12.465032, y: 12.465031, z: 12.465031}
+    - name: Cube.012
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09540325, y: 4.1934543, z: -0.83447427}
+      rotation: {x: 0.5423842, y: 0.5421793, z: 0.45367286, w: -0.45391846}
+      scale: {x: 5.5469084, y: 10.177965, z: 9.982119}
+    - name: Cube.013
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497118, y: 5.198849, z: 0.120576195}
+      rotation: {x: 0.57879716, y: 0.50186276, z: 0.40619448, w: -0.4981302}
+      scale: {x: 4.5074534, y: 10.177966, z: 9.9276}
+    - name: Cube.014
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497115, y: 5.198849, z: 0.12057632}
+      rotation: {x: -0.66504526, y: -0.38388297, z: -0.3463834, w: 0.53885734}
+      scale: {x: 4.509404, y: 13.19651, z: 10.838317}
+    - name: Cube.015
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497115, y: 5.198849, z: 0.12057632}
+      rotation: {x: -0.7415839, y: -0.23760511, z: -0.19109437, w: 0.5975618}
+      scale: {x: 4.936087, y: 14.445173, z: 11.823567}
+    - name: Cube.016
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497121, y: 5.198849, z: 0.120576225}
+      rotation: {x: -0.76558757, y: -0.14240257, z: -0.11438393, w: 0.61685777}
+      scale: {x: 5.885326, y: 20.994331, z: 13.442411}
+    - name: Cube.017
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497116, y: 5.198849, z: 0.120576195}
+      rotation: {x: 0.49790323, y: 0.40645617, z: -0.50208807, w: 0.5786133}
+      scale: {x: -4.507454, y: -10.177965, z: -9.9276}
+    - name: Cube.018
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.094971195, y: 5.198849, z: 0.12057632}
+      rotation: {x: 0.5386837, y: 0.34668416, z: -0.38412672, w: 0.66488844}
+      scale: {x: -4.509404, y: -13.196509, z: -10.838317}
+    - name: Cube.019
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.094971195, y: 5.198849, z: 0.12057632}
+      rotation: {x: 0.5974543, y: 0.19142984, z: -0.23787542, w: 0.7414973}
+      scale: {x: -4.936087, y: -14.445173, z: -11.823566}
+    - name: Cube.020
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497113, y: 5.198849, z: 0.120576225}
+      rotation: {x: 0.6167934, y: 0.11473038, z: -0.14268178, w: 0.76553565}
+      scale: {x: -5.8853254, y: -20.994331, z: -13.442411}
+    - name: Cube.021
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497109, y: 5.198849, z: 0.12057626}
+      rotation: {x: -0.50014144, y: -0.4998586, z: -0.49991515, w: 0.5000849}
+      scale: {x: 37.635784, y: 37.635784, z: 14.120962}
+    - name: Cube.022
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.09497109, y: 5.198849, z: 0.12057626}
+      rotation: {x: 0.4998586, y: 0.5001414, z: -0.5000849, w: 0.49991512}
+      scale: {x: -37.635784, y: -37.635784, z: -14.120962}
+    - name: BezierCircle.001
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.16596276, y: 3.1180735, z: -0.008339501}
+      rotation: {x: -0.4160146, y: 0.42282608, z: 0.5782008, w: 0.5602087}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cube.001
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.17902507, y: 2.8901312, z: 0.8418793}
+      rotation: {x: 0.68717545, y: -0.22913253, z: -0.66804683, w: -0.1702989}
+      scale: {x: 19.992064, y: 26.621449, z: 26.621447}
+    - name: manopla2
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -3.5600643, y: 3.5945697, z: 0.04477163}
+      rotation: {x: -0.7069145, y: 0.006768025, z: 0.7072343, w: 0.0067649637}
+      scale: {x: -77.23759, y: -39.083244, z: -48.09636}
+    - name: manopla
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: 3.3490813, y: 3.5945697, z: 0.04477163}
+      rotation: {x: -0.6974179, y: 0.1156809, z: 0.6977345, w: 0.11572719}
+      scale: {x: -77.23759, y: -39.08325, z: -48.09636}
+    - name: NurbsPath.008
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.40367615, y: 5.68257, z: 0.20092694}
+      rotation: {x: -0.22382434, y: -0.6679848, z: -0.2314523, w: 0.67091644}
+      scale: {x: 46.79643, y: 46.79643, z: 46.796425}
+    - name: craneo
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.08258787, y: 1.6538452, z: -0.7541279}
+      rotation: {x: 9.1916763e-10, y: 0.9999259, z: -0.012174745, w: 0.0000000754923}
+      scale: {x: 465.1023, y: 465.10226, z: 465.10226}
+    - name: mixamorig:Hips
+      parentName: villano@Dwarf Walk(Clone)
+      position: {x: -0.03098674, y: 2.312143, z: -0.110682935}
+      rotation: {x: 0.060208455, y: 0.0749065, z: -0.0045311525, w: 0.995361}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: -0, y: 0.40997756, z: -0.02467287}
+      rotation: {x: -0.030049749, y: -6.783707e-10, z: -0.000000009637656, w: 0.99954844}
+      scale: {x: 1, y: 1, z: 1.0000007}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: -0, y: 0.47917256, z: 8.550458e-10}
+      rotation: {x: -0.000000018626451, y: -4.72962e-10, z: 0.0000000055867475, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: -0, y: 0.54762566, z: -7.845699e-10}
+      rotation: {x: 0.0000000037252903, y: 0.0000000025164137, z: -0.000000005720125, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1.0000019}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.31536135, y: 0.5089628, z: -0.007825836}
+      rotation: {x: 0.5624625, y: -0.42393476, z: 0.5760889, w: 0.4147733}
+      scale: {x: 1.0000014, y: 1.000002, z: 1.0000015}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: -1.225258e-10, y: 0.6868984, z: -0.0000000013211194}
+      rotation: {x: -0.14962822, y: 0.016588062, z: 0.022951096, w: 0.9883368}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: -0.0000000027943732, y: 1.0342497, z: -3.6678102e-10}
+      rotation: {x: 0.043117374, y: 0.001094758, z: 0.031883024, w: 0.99856055}
+      scale: {x: 1.0000012, y: 1.0000011, z: 1.0000021}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: -7.467161e-11, y: 0.9076918, z: 3.0922306e-10}
+      rotation: {x: -0.0796235, y: -0.006341457, z: 0.061362606, w: 0.9949143}
+      scale: {x: 1.0000012, y: 1.0000013, z: 1.0000007}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.0000000012383612, y: 0.64316535, z: 0.000000001190612}
+      rotation: {x: 0.043091618, y: 0.81590503, z: -0.061332613, w: 0.5733065}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: 0.0000000011258094, y: 0.06930032, z: -8.102523e-10}
+      rotation: {x: 0.20443477, y: 0.00000041723243, z: -0.0873919, w: 0.9749713}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000006}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: -0.03845287, y: 0.17499591, z: -0.08995159}
+      rotation: {x: 0.26910943, y: -0.0073632034, z: -0.12936449, w: 0.9543536}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: -0.039590012, y: 0.039563622, z: -0.08460799}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.31536132, y: 0.5087974, z: -0.0050768172}
+      rotation: {x: -0.5634712, y: -0.42425376, z: 0.5684368, w: -0.42354283}
+      scale: {x: 1.0000006, y: 1.0000005, z: 1.0000007}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: -5.125504e-10, y: 0.6868984, z: -0.000000006961773}
+      rotation: {x: 0.15374649, y: 0.0013054012, z: -0.03869232, w: -0.9873516}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000005}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: -2.9656855e-10, y: 1.0330442, z: -1.7090769e-10}
+      rotation: {x: -0.04236673, y: 0.00064554205, z: -0.018050961, w: -0.99893886}
+      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000006}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: 1.7124582e-10, y: 0.90872264, z: -0.0000000013849274}
+      rotation: {x: -0.07750803, y: 0.010316213, z: -0.06230847, w: 0.9949894}
+      scale: {x: 1.0000005, y: 1, z: 1.0000004}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: 0.0000000019946733, y: 0.6823249, z: -0.0000000018138752}
+      rotation: {x: 0.078581564, y: 0.0019485191, z: 0.0053548613, w: 0.99689144}
+      scale: {x: 1.0000004, y: 1.0000012, z: 1.0000004}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: -3.6790596e-10, y: 0.09690391, z: -0.0000000044413975}
+      rotation: {x: 0.09662659, y: 0.000000007217748, z: -0.029674679, w: 0.99487823}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.9999998}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: -0.013501397, y: 0.16244072, z: -0.043962605}
+      rotation: {x: 0.089552335, y: -0.008734098, z: -0.059774525, w: 0.99414843}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: -0.02855089, y: 0.103257656, z: -0.05786219}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0, y: 0.61607873, z: 0.0000000041420227}
+      rotation: {x: 0.030049764, y: -0.000000082089, z: -0.000000015221922, w: 0.99954844}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0, y: 0.58608705, z: -0.04625285}
+      rotation: {x: 0.000000014141436, y: -0.0000000015579857, z: 0.000000026566394, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: -0, y: 2.0207543, z: -0.159474}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.55357397, y: -0.22776535, z: 0.28561652}
+      rotation: {x: -0.000000004988699, y: 0.064628914, z: 0.99790937, w: 0.000000011678205}
+      scale: {x: 1, y: 1, z: 0.9999997}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: -0, y: 1.0362163, z: -0.000000012531643}
+      rotation: {x: -0.22829427, y: 0.0124272425, z: 0.02047163, w: 0.97329766}
+      scale: {x: 1, y: 1.0000014, z: 1.0000013}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: -2.5759006e-10, y: 0.92402047, z: 0.00000003166845}
+      rotation: {x: 0.5811937, y: -0.02334935, z: -0.0023913935, w: 0.8134267}
+      scale: {x: 1, y: 1.0000017, z: 1.0000007}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: -3.0794708e-10, y: 0.3430518, z: -0.0000000014623219}
+      rotation: {x: -0.29070118, y: -0.0120197795, z: 0.0036521973, w: -0.95673144}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: 5.700542e-12, y: 0.17409171, z: -7.733973e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.55357397, y: -0.22776535, z: -0.054895386}
+      rotation: {x: 0.0000000034919674, y: 0.009805809, z: 0.99995196, w: -0.0000000033500793}
+      scale: {x: 0.9999999, y: 1.0000021, z: 1.0000021}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: -0, y: 1.0277576, z: -0.000000001499231}
+      rotation: {x: -0.1288594, y: 0.00044314226, z: -0.003410228, w: 0.9916569}
+      scale: {x: 1, y: 1.000001, z: 1.0000011}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: -5.5622493e-11, y: 0.6973904, z: 0.00000000818976}
+      rotation: {x: 0.534012, y: 0.009450403, z: -0.005969508, w: 0.845403}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 2.0283522e-10, y: 0.33367378, z: 0.0000000040267216}
+      rotation: {x: -0.30161333, y: 0.017161587, z: -0.0054299682, w: -0.9532604}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.99999994}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: -1.7936088e-11, y: 0.17618686, z: -3.8684853e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -94,13 +424,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
