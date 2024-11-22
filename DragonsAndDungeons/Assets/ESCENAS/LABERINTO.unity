@@ -52183,6 +52183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: villano
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: eef8cd489c6c4fc45918945c7ed49f09, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 8b1e34b734f8d824395fa25aa14e9ce9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -55376,7 +55380,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206881219}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: eef8cd489c6c4fc45918945c7ed49f09, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 8b1e34b734f8d824395fa25aa14e9ce9, type: 3}
   m_Controller: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
