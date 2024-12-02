@@ -13,6 +13,9 @@ TagManager:
   - bajarVida
   - Moneda
   - SalirNV
+  - Fire
+  - espada
+  - vida
   layers:
   - Default
   - TransparentFX

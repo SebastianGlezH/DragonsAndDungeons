@@ -22,7 +22,7 @@ public class BarraVida : MonoBehaviour
     private void Update()
     {
         if(nuevoGolpe == false){
-            Debug.Log(tiempoGolpe);
+            // Debug.Log(tiempoGolpe);
             tiempoGolpe -= Time.deltaTime * tiempoentreGolpes;
             if(tiempoGolpe <= 0f)
             {
@@ -30,6 +30,9 @@ public class BarraVida : MonoBehaviour
                 tiempoGolpe = 0.6f;
             }
             }
+        if(porcentajeVida > 300){
+            porcentajeVida = 300;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,9 +41,15 @@ public class BarraVida : MonoBehaviour
         {
             // Reducir vida y actualizar la barra de vida inmediatamente
             porcentajeVida -= 20f;
-            Debug.Log("Vida reducida: " + porcentajeVida);
+            // Debug.Log("Vida reducida: " + porcentajeVida);
             nuevoGolpe = false;
             ActualizarVida();
+        }
+         if(other.CompareTag("vida")){
+            if(porcentajeVida < 300){
+                porcentajeVida += 100f;
+            }
+            
         }
     }
 

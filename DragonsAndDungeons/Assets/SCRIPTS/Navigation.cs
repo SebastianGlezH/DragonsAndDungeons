@@ -14,10 +14,14 @@ public class NavigationScript : MonoBehaviour
     private Coroutine returnCoroutine; // Almacena la coroutine para regresar
     public float Cerca = 0.0f;
     public bool isMoving = false;     
+    public bool muerte = false;     
     Animator animator;
     private string enemyAnimationName = "DS_onehand_attack_A";
     public AudioSource sonidoEnemigo;
     public AudioClip SonidoGolpe;
+    public AudioClip SonidoDamage;
+    public AudioClip SonidoMuerte;
+    public float saludMaxEnemigo = 100f;
 
     void Start()
     {
@@ -27,14 +31,41 @@ public class NavigationScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("espada"))
+        {
+            saludMaxEnemigo -= 20f;
+            Debug.Log("Vida reducida del enemigo: " + saludMaxEnemigo);
+            sonidoEnemigo.PlayOneShot(SonidoDamage);
+            Debug.Log("Vida reducida: " + saludMaxEnemigo);
+            if(saludMaxEnemigo <= 0){
+                muerte = true; 
+            animator.SetBool("muerte", muerte);
+            sonidoEnemigo.PlayOneShot(SonidoMuerte);
+            Collider[] colliders = GetComponents<Collider>();
+    foreach (Collider col in colliders)
+    {
+        col.enabled = false;
+    }
+    Debug.Log("Colliders desactivados.");
+            Destroy(gameObject, 4f);
+            }
+        }
+    }
+
     void Update()
     {
-        // Detecta si debe seguir al jugador
-        if (shouldFollowPlayer && player != null)
+        if(saludMaxEnemigo > 0)
+        {
+                    if (shouldFollowPlayer && player != null)
         {
             agent.destination = player.position;
             LookAtPlayer();
         }
+        }
+        // Detecta si debe seguir al jugador
+
 
         Cerca = Vector3.Distance(transform.position, player.position);
         animator.SetFloat("Cerca", Cerca);
@@ -64,7 +95,7 @@ public class NavigationScript : MonoBehaviour
     {
         if (!sonidoEnemigo.isPlaying) // Evitar que se reproduzca varias veces seguidas
         {
-            // sonidoEnemigo.PlayOneShot(SonidoGolpe);
+            sonidoEnemigo.PlayOneShot(SonidoGolpe);
         }
     }
 

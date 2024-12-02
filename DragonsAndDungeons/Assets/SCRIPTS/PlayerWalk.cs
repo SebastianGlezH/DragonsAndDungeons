@@ -20,6 +20,9 @@ public class PlayerWalk : MonoBehaviour
     public float acceleration = 2f;
     public float deceleration = 10f;
 
+    public AudioSource sonidoPlayer;
+    public AudioClip SonidoGolpe;
+
     private CharacterController controller;
 
     void Awake()
@@ -72,7 +75,6 @@ public class PlayerWalk : MonoBehaviour
         {
             velocidad = 3.0f; // Limitar la velocidad al dejar de presionar Shift
             speed = 4f;
-            Debug.Log("sis");
         }
 
         }
@@ -96,10 +98,17 @@ public class PlayerWalk : MonoBehaviour
 
     void CheckAttack()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            playerAnim.PlayerAttack();
-        }
+        if (Input.GetMouseButtonDown(0))
+{
+    playerAnim.PlayerAttack();
+    
+    // Verifica si el sonido no se está reproduciendo antes de reproducirlo
+    if (!sonidoPlayer.isPlaying)
+    {
+        sonidoPlayer.PlayOneShot(SonidoGolpe);
+    }
+
+}
     }
 
     void GroundCollisionAndJump()
