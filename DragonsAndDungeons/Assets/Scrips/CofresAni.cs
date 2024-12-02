@@ -12,6 +12,9 @@ public class CofresAni : MonoBehaviour
     private bool isPlayerInRange = false; // Verifica si el jugador está dentro del rango
     public Animator animator;
     public string triggerName = "PlayAnimation";
+    public string animationStateName = "NombreDeLaAnimacion";
+    public string newTag = "PlayerSalir";
+    public GameObject player;
 
     void Start()
     {
@@ -51,29 +54,47 @@ public class CofresAni : MonoBehaviour
         }
     }
 
-
     void Update()
     {
-        // Si el jugador está dentro del rango y presiona "E"
+
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            // Cambia de escena
-            texto.SetActive(false);
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+            ChangeTag();
             if (animator != null)
             {
                 // Activar el Trigger en el Animator
                 animator.SetTrigger(triggerName);
+                CamaraCofre.SetActive(true);
+                texto.SetActive(false);
+                
             }
             
         }
+
+        if (animator != null)
+        {
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+            // Verificar si estamos en la animación deseada y si ha terminado
+            if (stateInfo.IsName(animationStateName) && stateInfo.normalizedTime >= 1.0f)
+            {
+                if (CamaraCofre != null && CamaraCofre.activeSelf)
+                {
+                    CamaraCofre.SetActive(false);
+                    
+                }
+            }
+        }
     }
 
-    
+    void ChangeTag()
+    {
+        if (player != null)
+        {
+            player.tag = newTag;
+        }
+        
+    }
 
 
 

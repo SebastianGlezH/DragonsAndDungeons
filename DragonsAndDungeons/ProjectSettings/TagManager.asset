@@ -16,6 +16,7 @@ TagManager:
   - Fire
   - espada
   - vida
+  - PlayerSalir
   layers:
   - Default
   - TransparentFX

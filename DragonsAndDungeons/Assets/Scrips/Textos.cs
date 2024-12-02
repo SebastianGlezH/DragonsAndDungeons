@@ -7,24 +7,33 @@ using UnityEngine.SceneManagement;
 public class Textos : MonoBehaviour
 {
     public GameObject texto;
+    public GameObject texto1;
     public int sceneIndex = 1; // Nombre de la escena a la que quieres cambiar
     private bool isPlayerInRange = false; // Verifica si el jugador está dentro del rango
 
     void Start()
     {
+        texto1.SetActive(false);
         texto.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // Verifica si el objeto que entró es el jugador (puedes ajustar según tu necesidad)
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerSalir"))
         {
             // Activa el texto
             texto.SetActive(true);
         }
 
         if (other.CompareTag("Player"))
+        {
+            // Activa el texto
+            texto1.SetActive(true);
+        }
+
+
+        if (other.CompareTag("PlayerSalir"))
         {
             isPlayerInRange = true;
         }
@@ -34,14 +43,20 @@ public class Textos : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // Verifica si el objeto que salió es el jugador
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerSalir"))
         {
             // Desactiva el texto
             texto.SetActive(false);
         }
 
-        // Si el jugador sale del rango, cambia el estado de la variable
         if (other.CompareTag("Player"))
+        {
+            // Desactiva el texto
+            texto1.SetActive(false);
+        }
+
+        // Si el jugador sale del rango, cambia el estado de la variable
+        if (other.CompareTag("PlayerSalir"))
         {
             isPlayerInRange = false;
         }
