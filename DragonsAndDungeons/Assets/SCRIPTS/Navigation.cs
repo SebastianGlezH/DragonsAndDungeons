@@ -15,6 +15,7 @@ public class NavigationScript : MonoBehaviour
     public float Cerca = 0.0f;
     public bool isMoving = false;     
     public bool muerte = false;     
+    public bool damage = false;     
     Animator animator;
     private string enemyAnimationName = "DS_onehand_attack_A";
     public AudioSource sonidoEnemigo;
@@ -22,11 +23,13 @@ public class NavigationScript : MonoBehaviour
     public AudioClip SonidoDamage;
     public AudioClip SonidoMuerte;
     public float saludMaxEnemigo = 100f;
+    public string etiqueta;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+        etiqueta = gameObject.tag;
         originalPosition = transform.position;
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -35,10 +38,10 @@ public class NavigationScript : MonoBehaviour
     {
         if (other.CompareTag("espada"))
         {
-            saludMaxEnemigo -= 20f;
+                saludMaxEnemigo -= 20f;
+                animator.SetBool("damage", damage);
             Debug.Log("Vida reducida del enemigo: " + saludMaxEnemigo);
             sonidoEnemigo.PlayOneShot(SonidoDamage);
-            Debug.Log("Vida reducida: " + saludMaxEnemigo);
             if(saludMaxEnemigo <= 0){
                 muerte = true; 
             animator.SetBool("muerte", muerte);
@@ -50,8 +53,9 @@ public class NavigationScript : MonoBehaviour
     }
     Debug.Log("Colliders desactivados.");
             Destroy(gameObject, 4f);
-            }
         }
+            }
+            
     }
 
     void Update()
