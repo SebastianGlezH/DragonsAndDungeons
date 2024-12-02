@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1083383137107649955}
   - component: {fileID: 1396255552865141091}
   m_Layer: 0
-  m_Name: Heart
+  m_Name: Prefab de salud
   m_TagString: vida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -30,8 +30,8 @@ public class BarraVida : MonoBehaviour
                 tiempoGolpe = 0.6f;
             }
             }
-        if(porcentajeVida > 300){
-            porcentajeVida = 300;
+        if(porcentajeVida > 200){
+            porcentajeVida = 200;
         }
     }
 
@@ -46,8 +46,10 @@ public class BarraVida : MonoBehaviour
             ActualizarVida();
         }
          if(other.CompareTag("vida")){
-            if(porcentajeVida < 300){
-                porcentajeVida += 100f;
+            if(porcentajeVida < 200){
+                Destroy(other.gameObject, 0.1f);
+                porcentajeVida += 50f;
+                ActualizarVida();
             }
             
         }
