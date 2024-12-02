@@ -16,6 +16,7 @@ public class NavigationScript : MonoBehaviour
     public bool isMoving = false;     
     public bool muerte = false;     
     public bool damage = false;     
+    public float animMuerte;    
     Animator animator;
     private string enemyAnimationName = "DS_onehand_attack_A";
     public AudioSource sonidoEnemigo;
@@ -40,10 +41,13 @@ public class NavigationScript : MonoBehaviour
         {
                 saludMaxEnemigo -= 20f;
                 animator.SetBool("damage", damage);
+                
             Debug.Log("Vida reducida del enemigo: " + saludMaxEnemigo);
             sonidoEnemigo.PlayOneShot(SonidoDamage);
             if(saludMaxEnemigo <= 0){
                 muerte = true; 
+            animMuerte = Random.Range(0.0f, 11.0f);
+            animator.SetFloat("animMuerte", animMuerte);
             animator.SetBool("muerte", muerte);
             sonidoEnemigo.PlayOneShot(SonidoMuerte);
             Collider[] colliders = GetComponents<Collider>();

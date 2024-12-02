@@ -48,7 +48,7 @@ public class BarraVida : MonoBehaviour
          if(other.CompareTag("vida")){
             if(porcentajeVida < 200){
                 Destroy(other.gameObject, 0.1f);
-                porcentajeVida += 50f;
+                porcentajeVida += 100f;
                 ActualizarVida();
             }
             
