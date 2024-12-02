@@ -9,6 +9,16 @@ public class Controles : MonoBehaviour
     public string targetTag = "SalirNV";
     private bool isPlayerInRange = false;
 
+
+    void Start()
+    {
+        // Ocultar el cursor
+        Cursor.visible = false;
+
+        // Bloquear el cursor en el centro de la pantalla
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         // Mapa
@@ -16,6 +26,20 @@ public class Controles : MonoBehaviour
         {
             
             canvas.SetActive(!canvas.activeSelf);
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        // Ocultar el cursor nuevamente si se presiona otra tecla (por ejemplo, C)
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
     }

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
 {
-    public float rotationSpeed = 3f; 
+    public float rotationSpeed = 3f;
+    private float verticalRotation = 0f;
+    public float sensitivity = 100f;
+    public Transform cameraTransform;
 
     private PlayerAnimator playerAnim;
     private float h, v;
@@ -41,7 +44,11 @@ public class PlayerWalk : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         transform.Rotate(0, mouseX * rotationSpeed, 0); // Rotar según la entrada del mouse
 
+        float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
+        verticalRotation -= mouseY;
+        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
 
+        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
     }
 
     private void FixedUpdate()

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ESCENAS/LABERINTO.unity
     guid: 799a89fba8c5fe34f8331479f043ea29
+  - enabled: 1
+    path: Assets/ESCENAS/Cementerio.unity
+    guid: ea1c834bc2535d748adfa165f1175953
   m_configObjects: {}
