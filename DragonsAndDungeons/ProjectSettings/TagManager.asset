@@ -18,6 +18,7 @@ TagManager:
   - vida
   - PlayerSalir
   - blue
+  - Camara
   layers:
   - Default
   - TransparentFX
