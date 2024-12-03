@@ -9,7 +9,7 @@ public class Textos : MonoBehaviour
     public GameObject texto;
     public GameObject texto1;
     public int sceneIndex = 1; // Nombre de la escena a la que quieres cambiar
-    private bool isPlayerInRange = false; // Verifica si el jugador está dentro del rango
+    private bool isPlayerInRange = false; // Verifica si el jugador estï¿½ dentro del rango
 
     void Start()
     {
@@ -19,21 +19,21 @@ public class Textos : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Verifica si el objeto que entró es el jugador (puedes ajustar según tu necesidad)
-        if (other.CompareTag("PlayerSalir"))
+        // Verifica si el objeto que entrï¿½ es el jugador (puedes ajustar segï¿½n tu necesidad)
+        if (other.CompareTag("Player"))
         {
             // Activa el texto
             texto.SetActive(true);
         }
 
+        // if (other.CompareTag("Player"))
+        // {
+        //     // Activa el texto
+        //     texto1.SetActive(true);
+        // }
+
+
         if (other.CompareTag("Player"))
-        {
-            // Activa el texto
-            texto1.SetActive(true);
-        }
-
-
-        if (other.CompareTag("PlayerSalir"))
         {
             isPlayerInRange = true;
         }
@@ -42,8 +42,8 @@ public class Textos : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        // Verifica si el objeto que salió es el jugador
-        if (other.CompareTag("PlayerSalir"))
+        // Verifica si el objeto que saliï¿½ es el jugador
+        if (other.CompareTag("Player"))
         {
             // Desactiva el texto
             texto.SetActive(false);
@@ -56,16 +56,16 @@ public class Textos : MonoBehaviour
         }
 
         // Si el jugador sale del rango, cambia el estado de la variable
-        if (other.CompareTag("PlayerSalir"))
-        {
-            isPlayerInRange = false;
-        }
+        // if (other.CompareTag("PlayerSalir"))
+        // {
+        //     isPlayerInRange = false;
+        // }
     }
 
 
     void Update()
     {
-        // Si el jugador está dentro del rango y presiona "E"
+        // Si el jugador estï¿½ dentro del rango y presiona "E"
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             // Cambia de escena
